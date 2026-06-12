@@ -84,11 +84,20 @@ Voir `SETUP_STRIPE.md` pour :
 
 **Contact** : Celie.octopuscreatio@gmail.com
 
+## 📝 Tâches restantes
+
+Voir `TODO.md` pour :
+- [ ] Configurer Stripe Payment Links (2 liens : écriture + lecture)
+- [ ] Mettre à jour les boutons "Je réserve ma parenthèse" avec les URLs Stripe
+- [ ] Configurer l'appel découverte gratuit (Calendly)
+- [ ] Tester les paiements en mode sandbox
+
 ## 🆘 Reprendre le développement
 
 1. Clone le repo
 2. `npm install`
-3. Lire `SETUP_STRIPE.md` (paiements)
-4. Lire `ARCHITECTURE.md` (détails techniques)
-5. `npm run dev` pour démarrer
+3. Lire `TODO.md` (tâches restantes)
+4. Lire `SETUP_STRIPE.md` (paiements)
+5. Lire `DEPLOYMENT_HETZNER.md` (serveur)
+6. `npm run dev` pour démarrer
 
