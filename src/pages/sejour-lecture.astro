@@ -1,0 +1,307 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Icon from '../components/Icon.astro';
+import '../styles/global.css';
+---
+
+<Layout
+  title="Séjour Lecture — Séjours littéraires Normandie"
+  description="Une bulle de recharge au cœur de la Normandie. Lecture, bibliothérapie et calme avant Noël. 20–22 novembre 2026."
+>
+  <Nav />
+  <main class="overflow-x-hidden">
+    <!-- Hero -->
+    <section class="relative py-32 bg-wb-ink">
+      <div class="max-w-5xl mx-auto px-6 md:px-10">
+        <p class="gsap-hidden font-montserrat text-wb-gold text-xs tracking-[0.25em] uppercase mb-4">Parenthèses d'Hiver</p>
+        <h1 class="gsap-hidden font-seasons text-wb-cream text-5xl mb-6">Séjour Lecture<br/>en attendant Noël</h1>
+        <p class="gsap-hidden font-lora text-wb-cream/80 text-xl mb-6 max-w-3xl">Un séjour magique et reposant au cœur de la Normandie. Une bulle de recharge pour se poser avant les fêtes.</p>
+        <div class="gsap-hidden space-y-2 font-montserrat text-wb-gold uppercase text-sm tracking-widest mb-8">
+          <p>20–22 novembre 2026 | Carcagny | 9 places</p>
+        </div>
+        <a href="https://calendly.com/q.thomasset" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300">
+          Je réserve ma parenthèse
+        </a>
+      </div>
+    </section>
+
+    <!-- Accroche avec images -->
+    <section class="bg-wb-cream py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <p class="gsap-hidden font-lora text-wb-charcoal/80 text-lg leading-relaxed mb-6">
+              Nous courons sans cesse après le temps, submergés par les tâches du quotidien. Nous enchaînons les jours, sans prendre le temps de réellement se poser et lâcher ce mental si envahissant.
+            </p>
+            <p class="gsap-hidden font-lora text-wb-charcoal/80 text-lg leading-relaxed italic mb-6">
+              Et si vous vous offriez une vraie pause avant Noël ?
+            </p>
+            <p class="gsap-hidden font-lora text-wb-charcoal/80 text-lg leading-relaxed italic mb-8">
+              Et si le plus beau des cadeaux, c'était de vous retrouver vous, avec un tas de livres, une boisson chaude, des moments cosy et de vraies belles rencontres ?
+            </p>
+            <div class="gsap-hidden font-lora text-wb-charcoal/70 text-base space-y-2">
+              <p><strong>20–22 novembre 2026</strong></p>
+              <p><strong>Carcagny</strong></p>
+              <p><strong>9 places disponibles</strong></p>
+            </div>
+          </div>
+          <img src="/images/sapin-livres.png" alt="Ambiance Noël" class="gsap-hidden rounded-lg shadow-lg" />
+        </div>
+
+      <!-- Infos -->
+      <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 mb-16">
+        <div class="gsap-hidden">
+          <h3 class="font-seasons text-wb-ink text-2xl mb-3 flex items-center gap-3">
+            <Icon name="bed" class="text-wb-gold flex-shrink-0" />
+            <span>Chambres partagées</span>
+          </h3>
+          <p class="font-lora text-wb-charcoal/80">3 personnes max par chambre<br/>9 places totales<br/>Convivialité garantie</p>
+        </div>
+        <div class="gsap-hidden">
+          <h3 class="font-seasons text-wb-ink text-2xl mb-3 flex items-center gap-3">
+            <Icon name="coins" class="text-wb-gold flex-shrink-0" />
+            <span>Tarif unique</span>
+          </h3>
+          <p class="font-lora text-wb-charcoal/80">380€ par personne<br/>ou 130€ x 3<br/>Tout inclus</p>
+        </div>
+        <div class="gsap-hidden">
+          <h3 class="font-seasons text-wb-ink text-2xl mb-3 flex items-center gap-3">
+            <Icon name="map-pin" class="text-wb-gold flex-shrink-0" />
+            <span>Lieu magique</span>
+          </h3>
+          <p class="font-lora text-wb-charcoal/80">
+            <a href="https://www.gites-jacuzzi-bayeux.fr" target="_blank" rel="noopener noreferrer" class="text-wb-bordeaux hover:text-wb-gold underline font-semibold">Gîtes Bayeux</a><br/>
+            Jacuzzi • Sauna • Hammam<br/>Au cœur de la Normandie
+          </p>
+        </div>
+      </div>
+
+      <!-- Images atmosphere -->
+      <div class="max-w-5xl mx-auto mb-12">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="gsap-hidden overflow-hidden rounded-lg shadow-lg h-80">
+            <img src="/images/portrait-celie-tasse.jpg" alt="Portrait cosy avec boisson" class="w-full h-full object-cover object-center" />
+          </div>
+          <div class="gsap-hidden overflow-hidden rounded-lg shadow-lg h-80">
+            <img src="/images/peluches-noel-livre.jpg" alt="Cosy Noël" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Réserver -->
+      <div class="max-w-5xl mx-auto text-center">
+        <a href="https://calendly.com/q.thomasset" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300">
+          Je réserve ma parenthèse
+        </a>
+      </div>
+    </section>
+
+    <!-- Ce que vous vivez -->
+    <section class="bg-wb-ink py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="gsap-hidden font-lora text-wb-cream/80 text-lg leading-relaxed mb-6">
+              Lors d'un week-end de lecture, les moments calmes s'enchaînent sans pression. Prenez le temps de vraiment vous poser avec un bon livre, de découvrir la bibliothérapie et de créer de vos mains un objet singulier, unique et destiné à vous seul.
+            </p>
+            <p class="gsap-hidden font-lora text-wb-cream/85 text-lg italic leading-relaxed">
+              Un séjour clefs en main où la seule décision que vous aurez à prendre sera de choisir entre une activité lecture, un jeu de société ou un plongeon dans le jacuzzi.
+            </p>
+          </div>
+          <div class="gsap-hidden overflow-hidden rounded-lg shadow-lg w-80 h-80">
+            <img src="/images/ambiance-noel-carnet.png" alt="Carnet et ambiance Noël" class="w-full h-full object-cover object-center" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programme -->
+    <section class="bg-wb-ink py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="gsap-hidden font-seasons text-wb-cream text-4xl mb-12">Le Programme : pas de décisions, juste du bien-être</h2>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <div class="gsap-hidden">
+              <h3 class="font-montserrat text-wb-gold uppercase text-sm tracking-widest mb-3">Vendredi</h3>
+              <p class="font-lora text-wb-cream/80">Accueil, apéro dinatoire, soirée détente</p>
+            </div>
+            <div class="gsap-hidden">
+              <h3 class="font-montserrat text-wb-gold uppercase text-sm tracking-widest mb-3">Samedi</h3>
+              <p class="font-lora text-wb-cream/80">Petit déjeuner • Atelier créatif • Repas • Temps calme (lecture, musique, créativité) • Promenade • Temps libre • Soirée film Noël</p>
+            </div>
+            <div class="gsap-hidden">
+              <h3 class="font-montserrat text-wb-gold uppercase text-sm tracking-widest mb-3">Dimanche</h3>
+              <p class="font-lora text-wb-cream/80">Petit déjeuner • Temps de lecture cosy • Repas • Atelier bibliothérapie • Goûter et départ</p>
+            </div>
+          </div>
+          <img src="/images/livre-cafe-noel.jpg" alt="Détente et lecture" class="gsap-hidden rounded-lg shadow-lg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Pourquoi -->
+    <section class="bg-wb-cream py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="gsap-hidden font-seasons text-wb-ink text-4xl mb-6">Pourquoi ce séjour est entre de bonnes mains avec moi ?</h2>
+        <p class="gsap-hidden font-lora text-wb-charcoal/80 text-lg mb-12 leading-relaxed">
+          Créer une bulle hors du temps où l'on se sent immédiatement chez soi ne s'improvise pas. Si j'ai conçu ce séjour "Lecture & Noël", c'est parce qu'il rassemble tout ce qui anime mon parcours professionnel et personnel :
+        </p>
+
+        <div class="space-y-12">
+          <div class="gsap-hidden grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 class="font-seasons text-wb-ink text-2xl mb-4">Les livres sont mon terrain de jeu</h3>
+              <p class="font-lora text-wb-charcoal/80 text-lg leading-relaxed">
+                Passionnée de lecture depuis toujours, j'en ai fait mon métier à plusieurs reprises, notamment à travers mon expertise en bibliothérapie et mon parcours dans les médiathèques. Je ne vais pas seulement vous offrir un espace de lecture : je sais exactement comment faire d'une lecture un outil de soin, de reconnexion et d'apaisement.
+              </p>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg w-80 h-80">
+              <img src="/images/celie-lecture.jpg" alt="Célie lisant" class="w-full h-full object-cover object-center" />
+            </div>
+          </div>
+
+          <div class="gsap-hidden grid md:grid-cols-2 gap-8 items-center">
+            <div class="overflow-hidden rounded-lg shadow-lg w-80 h-80 order-2 md:order-1">
+              <img src="/images/vegetal-normand.jpg" alt="Nature normande apaisante" class="w-full h-full object-cover object-center" />
+            </div>
+            <div class="order-1 md:order-2">
+              <h3 class="font-seasons text-wb-ink text-2xl mb-4">Une expérience éprouvée de l'organisation</h3>
+              <p class="font-lora text-wb-charcoal/80 text-lg leading-relaxed">
+                En tant que présidente d'association, orchestrer des séjours est une seconde nature pour moi. J'organise plusieurs week-ends par an où la logistique est fluide et invisible pour les participants. Vous arrivez, vous posez vos valises, et le monde extérieur s'arrête. Je gère tout le reste.
+              </p>
+            </div>
+          </div>
+
+          <div class="gsap-hidden grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 class="font-seasons text-wb-ink text-2xl mb-4">L'amour des gens et du bien-être</h3>
+              <p class="font-lora text-wb-charcoal/80 text-lg leading-relaxed mb-6">
+                Ce qui me fait vibrer, c'est l'humain. Je suis profondément soucieuse du bien-être de mes clientes. J'ai pensé ce séjour comme un cocon de douceur, bienveillant et sans jugement, où chacun trouve sa place à son rythme.
+              </p>
+              <h3 class="font-seasons text-wb-ink text-2xl mb-4">Convivialité, gourmandise et créativité</h3>
+              <p class="font-lora text-wb-charcoal/80 text-lg leading-relaxed">
+                Pour moi, un Noël réussi passe par le partage, les petites attentions créatives (comme nos ateliers créatifs) et le plaisir des sens. Attendez-vous à un accueil chaleureux, des plaids doux, des boissons chaudes réconfortantes et une ambiance profondément gourmande.
+              </p>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg w-80 h-80">
+              <img src="/images/gourmandise-croissant.jpg" alt="Gourmandise et bien-être" class="w-full h-full object-cover object-center" />
+            </div>
+          </div>
+
+          <p class="gsap-hidden font-lora text-wb-charcoal/80 text-lg italic leading-relaxed border-l-4 border-wb-bordeaux pl-6">
+            Je mets toute mon énergie et mon savoir-faire pour que vous repartiez l'esprit léger, le cœur chaud et les batteries pleinement rechargées.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pour qui -->
+    <section class="bg-wb-ink py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="gsap-hidden font-seasons text-wb-cream text-4xl mb-12">Pour qui est-ce fait ?</h2>
+
+        <div class="space-y-8 mb-12">
+          <div class="gsap-hidden">
+            <p class="font-lora text-wb-cream/80 text-lg leading-relaxed italic mb-4">
+              Ce séjour est pour vous si vous cherchez du silence, du temps pour lire et du temps pour (se) découvrir.
+            </p>
+          </div>
+
+          <div class="gsap-hidden">
+            <p class="font-lora text-wb-cream/80 text-lg leading-relaxed italic mb-4">
+              Ce séjour de lecture sur le thème de Noël est pour vous si vous cherchez un vrai temps de qualité à passer dans un lieu typique, dans un cadre bienveillant, au cœur de la Normandie. Si vous souhaitez vous faire ou offrir un vrai cadeau original et bienfaisant, où gourmandise et créativité viendront sublimer votre repos.
+            </p>
+          </div>
+
+          <div class="gsap-hidden">
+            <p class="font-lora text-wb-cream/80 text-lg leading-relaxed mb-4 font-semibold">
+              Ce séjour est organisé pour vous enlever toute charge mentale :
+            </p>
+            <ul class="font-lora text-wb-cream/80 text-lg space-y-3 ml-6">
+              <li class="flex gap-3">
+                <span class="text-wb-gold">•</span>
+                <span>Vous posez vos valises, je prends en charge le reste</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-wb-gold">•</span>
+                <span>Je sélectionne un traiteur gourmand, travaillant les produits frais et locaux</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-wb-gold">•</span>
+                <span>Je choisis un lieu confortable et cosy pour une vraie bulle d'air au cœur de la Normandie</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-wb-gold">•</span>
+                <span>Tout est prévu, du linge de lit à la camomille, du petit-déjeuner au tea-time</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-wb-gold">•</span>
+                <span>Avant le séjour, vous recevrez un programme détaillé avec une liste à cocher de choses à prendre dans votre valise</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center space-y-4">
+          <a href="https://calendly.com/q.thomasset" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300 mr-4">
+            Je réserve ma parenthèse
+          </a>
+          <a href="mailto:Celie.octopuscreatio@gmail.com?subject=Je%20demande%20le%20programme%20détaillé%20-%20Séjour%20Lecture" class="gsap-hidden inline-block px-8 py-4 border-2 border-wb-cream text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-cream hover:text-wb-ink transition-colors duration-300">
+            Je demande le programme détaillé
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-wb-cream py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="gsap-hidden font-seasons text-wb-ink text-4xl mb-16 text-center">Questions fréquentes</h2>
+
+        <div class="space-y-8">
+          <!-- FAQ 1 -->
+          <div class="gsap-hidden">
+            <h3 class="font-montserrat text-wb-bordeaux text-sm uppercase tracking-widest mb-3">Si je ne peux pas faire une activité ?</h3>
+            <p class="font-lora text-wb-charcoal/80 leading-relaxed">
+              Toutes les activités sont optionnelles. Si vous ne pouvez pas participer, vous pouvez rester au gîte pour vous reposer, lire, continuer vos ateliers créatifs, ou simplement profiter du calme et du bien-être. L'objectif principal est que vous vous sentiez bien et en accord avec vos envies.
+            </p>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="gsap-hidden border-t border-wb-charcoal/10 pt-8">
+            <h3 class="font-montserrat text-wb-bordeaux text-sm uppercase tracking-widest mb-3">Si annulation, est-ce que je suis remboursée ?</h3>
+            <p class="font-lora text-wb-charcoal/80 leading-relaxed">
+              Une fois réservé, le séjour est définitif. Conformément à la loi, <strong>le droit de rétractation ne s'applique pas aux services d'hébergement et de loisirs</strong>. Cet engagement mutuel nous permet de garantir l'authenticité et la qualité de votre parenthèse. Vous payez la totalité du séjour lors de votre réservation.
+            </p>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="gsap-hidden border-t border-wb-charcoal/10 pt-8">
+            <h3 class="font-montserrat text-wb-bordeaux text-sm uppercase tracking-widest mb-3">Les chambres sont-elles mixtes ?</h3>
+            <p class="font-lora text-wb-charcoal/80 leading-relaxed">
+              Non, les chambres ne sont pas mixtes. Nous assurons que chaque participante soit dans un environnement confortable et sécurisé.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-wb-bordeaux py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="font-seasons text-wb-cream text-4xl mb-6">Vous méritez cette parenthèse</h2>
+        <p class="font-lora text-wb-cream/85 text-xl mb-12">Un séjour clefs en main où la seule décision que vous aurez à prendre sera de choisir entre une activité lecture, un jeu de société ou un plongeon dans le jacuzzi.</p>
+        <a href="https://calendly.com/q.thomasset" class="inline-block px-8 py-4 bg-wb-cream text-wb-bordeaux font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold transition-colors">
+          Appel découverte gratuit
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+
+  <script>
+    import '../scripts/animations.ts';
+  </script>
+</Layout>

@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Google Fonts are loaded in Layout.astro via <link> ──── */
+
+/* ─── Base ─────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  background-color: #FAF7F2;
+  overflow-x: hidden;
+}
+
+body {
+  @apply font-lora text-wb-charcoal antialiased;
+  overflow-x: hidden;
+  max-width: 100vw;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* ─── GSAP Initial States (prevent FOUC) ───────────────────── */
+/* translateY only — translateX causes horizontal overflow on mobile */
+.gsap-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.gsap-hidden-x {
+  opacity: 0;
+}
+
+/* ─── Smooth scroll for anchor links ───────────────────────── */
+* {
+  scroll-margin-top: 80px;
+}
+
+/* ─── Custom scrollbar (webkit) ────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A04E;
+  border-radius: 3px;
+}
+
+/* ─── Portrait gallery — hide scrollbar ────────────────────── */
+.gallery-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.gallery-scroll::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,275 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Icon from '../components/Icon.astro';
+import '../styles/global.css';
+---
+
+<Layout
+  title="Séjour Écriture — Séjours littéraires Normandie"
+  description="Un week-end tremplin pour débloquer la page blanche et structurer votre roman. 23–25 octobre 2026."
+>
+  <Nav />
+  <main class="overflow-x-hidden">
+    <!-- Hero -->
+    <section class="relative py-32 bg-wb-ink">
+      <div class="max-w-5xl mx-auto px-6 md:px-10">
+        <p class="gsap-hidden font-montserrat text-wb-gold text-xs tracking-[0.25em] uppercase mb-4">Parenthèses d'Hiver</p>
+        <h1 class="gsap-hidden font-seasons text-wb-cream text-5xl mb-6">Séjour Écriture</h1>
+        <p class="gsap-hidden font-lora text-wb-cream/80 text-xl mb-6 max-w-3xl">Un tremplin pour structurer votre récit, débloquer vos barrières créatives et poser les bases solides de votre futur livre.</p>
+        <div class="gsap-hidden space-y-2 font-montserrat text-wb-gold uppercase text-sm tracking-widest mb-8">
+          <p>23–25 octobre 2026 | Monceaux en Bessin | 7 places</p>
+        </div>
+        <a href="https://calendly.com/q.thomasset" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300">
+          Je réserve ma parenthèse
+        </a>
+      </div>
+    </section>
+
+    <!-- Accroche avec image -->
+    <section class="bg-wb-cream py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <p class="gsap-hidden font-lora text-wb-charcoal/80 text-lg leading-relaxed italic mb-6">
+              1 Français sur 4 rêve d'écrire un livre. Seuls 5 % le font vraiment. Pourquoi ? Le manque de temps, de méthode, ou la peur de la page blanche.
+            </p>
+            <p class="gsap-hidden font-lora text-wb-charcoal/80 text-lg leading-relaxed mb-6">
+              Ne laissez pas votre roman dans un tiroir : le séjour Écriture est votre tremplin concret pour structurer votre récit et oser vous lancer.
+            </p>
+            <div class="gsap-hidden font-lora text-wb-charcoal/70 text-base space-y-2">
+              <p><strong>23–25 octobre 2026</strong></p>
+              <p><strong>Monceaux en Bessin</strong> (proche Bayeux)</p>
+              <p><strong>7 places disponibles</strong></p>
+            </div>
+          </div>
+          <img src="/images/carnet-stylo-plume.jpg" alt="Carnet et stylo" class="gsap-hidden rounded-lg shadow-lg" />
+        </div>
+
+        <!-- Infos -->
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="gsap-hidden">
+            <h3 class="font-seasons text-wb-ink text-2xl mb-3 flex items-center gap-3">
+              <Icon name="bed" class="text-wb-gold flex-shrink-0" />
+              <span>Chambres</span>
+            </h3>
+            <p class="font-lora text-wb-charcoal/80">2 doubles (4 places)<br/>3 individuelles<br/>7 places totales</p>
+          </div>
+          <div class="gsap-hidden">
+            <h3 class="font-seasons text-wb-ink text-2xl mb-3 flex items-center gap-3">
+              <Icon name="coins" class="text-wb-gold flex-shrink-0" />
+              <span>Tarifs</span>
+            </h3>
+            <p class="font-lora text-wb-charcoal/80">Double : 380€<br/>Individuelle : 440€<br/>Paiement 3x possible</p>
+          </div>
+          <div class="gsap-hidden">
+            <h3 class="font-seasons text-wb-ink text-2xl mb-3 flex items-center gap-3">
+              <Icon name="map-pin" class="text-wb-gold flex-shrink-0" />
+              <span>Lieu</span>
+            </h3>
+            <p class="font-lora text-wb-charcoal/80">
+              <a href="https://lesmaisonsdespommiers.com" target="_blank" rel="noopener noreferrer" class="text-wb-bordeaux hover:text-wb-gold underline font-semibold">Les Maisons des Pommiers</a><br/>
+              Monceaux en Bessin<br/>Proche Bayeux
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA Réserver -->
+        <div class="text-center mt-12">
+          <a href="https://calendly.com/q.thomasset" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300">
+            Je réserve ma parenthèse
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ce que vous gagnez -->
+    <section class="bg-wb-ink py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="gsap-hidden font-seasons text-wb-cream text-4xl mb-4 text-center">Ce séjour de 48 heures transforme votre projet</h2>
+        <p class="gsap-hidden font-lora text-wb-cream/80 text-center text-lg mb-12">Un cadre structuré, spécifiquement conçu pour faire sauter vos verrous et vous faire passer à l'action :</p>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div class="gsap-hidden">
+            <h3 class="font-seasons text-wb-gold text-2xl mb-4">Un cadre pour votre créativité</h3>
+            <p class="font-lora text-wb-cream/80">Logistique zéro charge. Pas de repas à préparer, du temps et de l'espace pour créer. Vous déposez votre quotidien à l'arrivée pour offrir à votre cerveau l'espace vide dont il a besoin pour écrire.</p>
+          </div>
+          <div class="gsap-hidden">
+            <h3 class="font-seasons text-wb-gold text-2xl mb-4">Le déblocage de la page blanche</h3>
+            <p class="font-lora text-wb-cream/80">Grâce à des ateliers structurés basés sur des techniques de création, nous transformons le chaos de vos idées en une feuille de route claire.</p>
+          </div>
+          <div class="gsap-hidden">
+            <h3 class="font-seasons text-wb-gold text-2xl mb-4">La structure de votre récit</h3>
+            <p class="font-lora text-wb-cream/80">Vous n'apprenez pas seulement à aligner des mots, vous apprenez à bâtir l'architecture de votre roman, à définir vos personnages et à poser les bases de votre discipline d'écriture.</p>
+          </div>
+          <div class="gsap-hidden">
+            <h3 class="font-seasons text-wb-gold text-2xl mb-4">Un retour serein pour écrire</h3>
+            <p class="font-lora text-wb-cream/80">Vous apprendrez à vous organiser au quotidien et à trouver la motivation pour enfin aller au bout de votre premier jet.</p>
+          </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto text-center">
+          <p class="gsap-hidden font-lora text-wb-cream/85 text-lg italic mb-8">
+            Vous ne repartez pas avec de vagues conseils, mais avec une feuille de route, une méthodologie claires et les premiers chapitres de votre livre enfin couchés sur le papier.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programme et images -->
+    <section class="bg-wb-ink py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="gsap-hidden font-seasons text-wb-cream text-4xl mb-12">Le Programme</h2>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+          <div class="space-y-8">
+            <div class="gsap-hidden">
+              <h3 class="font-montserrat text-wb-gold uppercase text-sm tracking-widest mb-3">Vendredi</h3>
+              <p class="font-lora text-wb-cream/80">Accueil, apéro dinatoire, soirée rencontre</p>
+            </div>
+            <div class="gsap-hidden">
+              <h3 class="font-montserrat text-wb-gold uppercase text-sm tracking-widest mb-3">Samedi</h3>
+              <p class="font-lora text-wb-cream/80">Petit déjeuner • Atelier Structure ton idée • Repas • Temps calme • Atelier S'organiser pour écrire • Temps libre • Soirée partage</p>
+            </div>
+            <div class="gsap-hidden">
+              <h3 class="font-montserrat text-wb-gold uppercase text-sm tracking-widest mb-3">Dimanche</h3>
+              <p class="font-lora text-wb-cream/80">Petit déjeuner • Atelier débloquer sa créativité • Repas • Co-création littéraire • Départ</p>
+            </div>
+          </div>
+          <div class="gsap-hidden overflow-hidden rounded-lg shadow-lg h-80">
+            <img src="/images/flatlay-livres-ecriture.jpg" alt="Programme créatif" class="w-full h-full object-cover" />
+          </div>
+      </div>
+    </section>
+
+    <!-- Pourquoi Célie -->
+    <section class="bg-wb-cream py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="gsap-hidden font-seasons text-wb-ink text-4xl mb-6">Pourquoi travailler avec moi sur votre projet de livre ?</h2>
+        <p class="gsap-hidden font-lora text-wb-charcoal/80 text-lg mb-12 leading-relaxed">
+          Écrire est un chemin magnifique, mais c'est aussi un parcours semé de doutes et de fausses pistes. Si je suis aujourd'hui la meilleure personne pour vous accompagner et propulser votre projet, c'est pour trois raisons concrètes :
+        </p>
+
+        <div class="space-y-12">
+          <div class="gsap-hidden grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 class="font-seasons text-wb-ink text-2xl mb-4">Une expérience d'autrice tout-terrain</h3>
+              <p class="font-lora text-wb-charcoal/80 text-lg leading-relaxed">
+                J'écris depuis de nombreuses années et j'ai exploré des genres très différents. Je suis l'autrice de quatre ouvrages : deux romances, un livre pratique sur la bibliothérapie et un jeu de Tarot ancré dans le folklore normand (actuellement en cours de publication). Cette diversité me permet de comprendre les codes du roman comme les exigences d'un projet littéraire.
+              </p>
+            </div>
+            <div class="gsap-hidden overflow-hidden rounded-lg shadow-lg w-80 h-80">
+              <img src="/images/portrait-celie-principal.jpg" alt="Célie Adamczyk autrice" class="w-full h-full object-cover object-center" />
+            </div>
+          </div>
+
+          <div class="gsap-hidden grid md:grid-cols-2 gap-8 items-center">
+            <div class="overflow-hidden rounded-lg shadow-lg w-80 h-80 order-2 md:order-1">
+              <img src="/images/plume-ecriture.jpg" alt="Écriture créative" class="w-full h-full object-cover object-bottom" />
+            </div>
+            <div class="order-1 md:order-2">
+              <h3 class="font-seasons text-wb-ink text-2xl mb-4">Vous faire gagner des années de recherche</h3>
+              <p class="font-lora text-wb-charcoal/80 text-lg leading-relaxed">
+                J'ai mis du temps à stabiliser mes propres outils et à structurer des méthodes d'écriture qui fonctionnent vraiment. Ce temps que j'ai perdu à chercher mon organisation, je l'ai transformé en protocoles clairs. Mon objectif est simple : vous transmettre ces clés pour vous faire économiser des mois de blocages et de doutes.
+              </p>
+            </div>
+          </div>
+
+          <div class="gsap-hidden grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 class="font-seasons text-wb-ink text-2xl mb-4">Une double posture unique</h3>
+              <div class="space-y-4">
+                <div>
+                  <p class="font-semibold text-wb-ink mb-2">Côté cadre :</p>
+                  <p class="font-lora text-wb-charcoal/80 text-lg">Mon parcours dans le management et la direction de projets culturels vous garantit une animation structurée, un respect du rythme de chacun et une gestion de groupe fluide et rassurante.</p>
+                </div>
+                <div>
+                  <p class="font-semibold text-wb-ink mb-2">Côté cœur :</p>
+                  <p class="font-lora text-wb-charcoal/80 text-lg">Je mets un point d'honneur à créer une ambiance conviviale, douce et profondément bienveillante. Pas de jugement ici, uniquement un boost d'énergie collective pour vous donner l'élan nécessaire.</p>
+                </div>
+              </div>
+            </div>
+            <div class="gsap-hidden overflow-hidden rounded-lg shadow-lg w-80 h-80">
+              <img src="/images/portrait-celie-livre.jpg" alt="Célie avec un livre" class="w-full h-full object-cover object-top" />
+            </div>
+          </div>
+
+          <p class="gsap-hidden font-lora text-wb-charcoal/80 text-lg italic leading-relaxed border-l-4 border-wb-bordeaux pl-6">
+            Je connais le chemin, ses pièges et ses raccourcis. Laissez-moi être votre guide pour ce chapitre de votre histoire.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pour qui -->
+    <section class="bg-wb-ink py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="gsap-hidden font-seasons text-wb-cream text-4xl mb-12">Pour qui est-ce fait ?</h2>
+        <div class="space-y-4 font-lora text-wb-cream/80 text-lg mb-12">
+          <p class="gsap-hidden">✓ Vous avez une histoire en tête depuis des années et vous voulez enfin la poser</p>
+          <p class="gsap-hidden">✓ Vous avez commencé à écrire mais vous êtes bloqué, vous ne savez pas par où continuer</p>
+          <p class="gsap-hidden">✓ Vous cherchez un cadre structuré et bienveillant pour enfin y aller vraiment</p>
+          <p class="gsap-hidden">✓ Vous aimez l'idée de progresser en groupe, entouré d'autres écrivains en herbe</p>
+        </div>
+        <div class="text-center space-y-4">
+          <a href="https://calendly.com/q.thomasset" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300 mr-4">
+            Je réserve ma parenthèse
+          </a>
+          <a href="mailto:Celie.octopuscreatio@gmail.com?subject=Je%20demande%20le%20programme%20détaillé%20-%20Séjour%20Écriture" class="gsap-hidden inline-block px-8 py-4 border-2 border-wb-cream text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-cream hover:text-wb-ink transition-colors duration-300">
+            Je demande le programme détaillé
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-wb-cream py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="gsap-hidden font-seasons text-wb-ink text-4xl mb-16 text-center">Questions fréquentes</h2>
+
+        <div class="space-y-8">
+          <!-- FAQ 1 -->
+          <div class="gsap-hidden">
+            <h3 class="font-montserrat text-wb-bordeaux text-sm uppercase tracking-widest mb-3">Si je ne peux pas faire une activité ?</h3>
+            <p class="font-lora text-wb-charcoal/80 leading-relaxed">
+              Toutes les activités sont optionnelles. Si vous ne pouvez pas participer, vous pouvez rester au gîte pour vous reposer, lire, continuer vos ateliers créatifs, ou simplement profiter du calme et du bien-être. L'objectif principal est que vous vous sentiez bien et en accord avec vos envies.
+            </p>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="gsap-hidden border-t border-wb-charcoal/10 pt-8">
+            <h3 class="font-montserrat text-wb-bordeaux text-sm uppercase tracking-widest mb-3">Si annulation, est-ce que je suis remboursée ?</h3>
+            <p class="font-lora text-wb-charcoal/80 leading-relaxed">
+              Une fois réservé, le séjour est définitif. Conformément à la loi, <strong>le droit de rétractation ne s'applique pas aux services d'hébergement et de loisirs</strong>. Cet engagement mutuel nous permet de garantir l'authenticité et la qualité de votre parenthèse. Vous payez la totalité du séjour lors de votre réservation.
+            </p>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="gsap-hidden border-t border-wb-charcoal/10 pt-8">
+            <h3 class="font-montserrat text-wb-bordeaux text-sm uppercase tracking-widest mb-3">Les chambres sont-elles mixtes ?</h3>
+            <p class="font-lora text-wb-charcoal/80 leading-relaxed">
+              Non, les chambres ne sont pas mixtes. Nous assurons que chaque participante soit dans un environnement confortable et sécurisé.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-wb-bordeaux py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="font-seasons text-wb-cream text-4xl mb-6">Prêt à écrire votre histoire ?</h2>
+        <p class="font-lora text-wb-cream/85 text-xl mb-12">Arrêtez de rêver votre livre. Venez l'écrire.</p>
+        <a href="https://calendly.com/q.thomasset" class="inline-block px-8 py-4 bg-wb-cream text-wb-bordeaux font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold transition-colors">
+          Appel découverte gratuit
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+
+  <script>
+    import '../scripts/animations.ts';
+  </script>
+</Layout>

@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Layout
+  title="Séjours littéraires Normandie — Week-ends bibliothérapie"
+  description="Deux week-ends pour vous retrouver. Séjours de déconnexion et d'écriture au cœur de la Normandie avec Célie Adamczyk."
+>
+  <Nav />
+  <main class="overflow-x-hidden">
+    <!-- Hero -->
+    <section id="hero" class="relative min-h-screen flex flex-col justify-center overflow-hidden" aria-label="Accueil">
+      <div
+        id="hero-bg"
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('/images/hero-accueil.png');"
+        aria-hidden="true"
+      ></div>
+      <div class="absolute inset-0 bg-wb-ink/40" aria-hidden="true"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-wb-charcoal/50 via-transparent to-transparent" aria-hidden="true"></div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-6 md:px-10 pt-32 pb-24">
+        <p id="hero-eyebrow" class="gsap-hidden font-montserrat text-wb-gold text-xs tracking-[0.25em] uppercase mb-6">
+          Des séjours pour se retrouver
+        </p>
+        <h1 id="hero-headline" class="gsap-hidden font-seasons text-wb-cream mb-6 max-w-3xl" style="font-size: clamp(3rem, 7vw, 5.5rem); line-height: 1.05;">
+          Au cœur de<br /><em class="not-italic text-wb-gold">la Normandie</em>
+        </h1>
+        <p id="hero-sub" class="gsap-hidden font-lora text-wb-cream/85 leading-relaxed mb-10 max-w-xl" style="font-size: clamp(1.1rem, 2vw, 1.35rem);">
+          Découvrez nos week-ends bibliothérapie—des parenthèses essentielles pour écrire, lire, et vous retrouver.
+        </p>
+        <div id="hero-cta" class="gsap-hidden flex flex-col sm:flex-row gap-4">
+          <a href="#sejours" class="inline-flex items-center justify-center gap-3 px-7 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300 group" style="min-height: 52px;">
+            Je réserve mon séjour
+            <span class="text-base transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nos séjours (juste après hero) -->
+    <section id="sejours" class="bg-wb-cream py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="gsap-hidden font-seasons text-wb-ink text-center text-4xl mb-16">Nos séjours</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <a href="/sejour-ecriture" class="gsap-hidden group">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <img src="/images/machine-ecrire.jpg" alt="Séjour Écriture" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div class="p-8">
+                <h3 class="font-seasons text-wb-ink text-3xl mb-2">Séjour Écriture</h3>
+                <p class="font-montserrat text-wb-sage text-sm uppercase tracking-widest mb-4">23–25 octobre 2026</p>
+                <p class="font-lora text-wb-charcoal/80 leading-relaxed">Un tremplin pour structurer votre récit et débloquer vos barrières créatives.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="/sejour-lecture" class="gsap-hidden group">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <img src="/images/sapin-livres.png" alt="Séjour Lecture" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div class="p-8">
+                <h3 class="font-seasons text-wb-ink text-3xl mb-2">Séjour Lecture & Noël</h3>
+                <p class="font-montserrat text-wb-sage text-sm uppercase tracking-widest mb-4">20–22 novembre 2026</p>
+                <p class="font-lora text-wb-charcoal/80 leading-relaxed">Une bulle de recharge—lecture, bibliothérapie et calme absolu.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Présentation Célie -->
+    <section id="presentation" class="bg-wb-ink py-20 md:py-32 px-6 md:px-10">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <p class="gsap-hidden font-montserrat text-wb-gold text-xs tracking-[0.25em] uppercase mb-4">Qui suis-je</p>
+            <h2 class="gsap-hidden font-seasons text-wb-cream text-4xl mb-6">Célie Adamczyk</h2>
+            <p class="gsap-hidden font-lora text-wb-cream/80 leading-relaxed mb-6">
+              Bonjour, je suis Célie Adamczyk. Mon métier ? Créer des espaces de déconnexion et de travail intérieur pour vous aider à poser vos valises, clarifier vos projets et retrouver votre propre dynamique.
+            </p>
+            <p class="gsap-hidden font-lora text-wb-cream/80 leading-relaxed mb-6">
+              Dans tous mes week-ends je vous garantis de la bonne humeur, de la douceur et de la gourmandise !
+            </p>
+            <p class="gsap-hidden font-seasons text-wb-gold italic text-lg">"Je construis le cadre, vous tracez votre route."</p>
+          </div>
+          <img src="/images/portrait-celie-principal.jpg" alt="Portrait de Célie Adamczyk" class="gsap-hidden rounded-lg shadow-lg" />
+        </div>
+
+        <!-- Deux piliers -->
+        <div class="mb-20">
+          <h3 class="gsap-hidden font-seasons text-wb-cream text-3xl mb-12 text-center">Du cadre à l'action</h3>
+          <p class="gsap-hidden font-lora text-wb-cream/80 text-center mb-12">Mon approche repose sur deux piliers concrets :</p>
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+              <div class="gsap-hidden">
+                <h4 class="font-montserrat text-wb-gold text-xs tracking-[0.25em] uppercase mb-4">La structure</h4>
+                <p class="font-lora text-wb-cream/80 leading-relaxed">
+                  Issue de mon parcours dans la direction de projets culturels et de médiathèques, j'apporte une organisation rigoureuse. Logistique, rythme, confort : tout est cadré pour que vous n'ayez qu'à vous laisser porter. Mes séjours sont garantis 0 charge mentale.
+                </p>
+              </div>
+              <div class="gsap-hidden">
+                <h4 class="font-montserrat text-wb-gold text-xs tracking-[0.25em] uppercase mb-4">L'expérience terrain</h4>
+                <p class="font-lora text-wb-cream/80 leading-relaxed">
+                  Avec mon association Étrange Tarot, j'organise 3 à 4 week-ends par an. Ce ne sont pas des théories, ce sont des formats éprouvés. Le résultat ? Les participants repartent systématiquement reboostés, l'esprit clair et prêts à reprendre le cours de leur vie avec une énergie neuve.
+                </p>
+              </div>
+            </div>
+            <img src="/images/paysage-normand.jpg" alt="Paysage normand" class="gsap-hidden rounded-lg shadow-lg" />
+          </div>
+        </div>
+
+        <!-- Gourmandise section -->
+        <div class="gsap-hidden grid md:grid-cols-2 gap-12 items-center">
+          <img src="/images/gourmandise-croissant.jpg" alt="Gourmandise" class="rounded-lg shadow-lg order-2 md:order-1" />
+          <div class="order-1 md:order-2">
+            <p class="font-montserrat text-wb-gold text-xs tracking-[0.25em] uppercase mb-4">L'esprit</p>
+            <p class="font-lora text-wb-cream/80 leading-relaxed text-lg">
+              Dans tous mes week-ends je vous garantis de la <strong>bonne humeur, de la douceur et de la gourmandise</strong> ! Des moments partagés, des instants cosy, et des repas pensés pour régaler vos papilles autant que votre âme.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+
+  <script>
+    import '../scripts/animations.ts';
+  </script>
+</Layout>
