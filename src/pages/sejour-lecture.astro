@@ -21,9 +21,9 @@ import '../styles/global.css';
         <div class="gsap-hidden space-y-2 font-montserrat text-wb-gold uppercase text-sm tracking-widest mb-8">
           <p>20–22 novembre 2026 | Carcagny | 9 places</p>
         </div>
-        <a href="https://calendly.com/q.thomasset" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300">
+        <button onclick="openPaymentModal()" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300">
           Je réserve ma parenthèse
-        </a>
+        </button>
       </div>
     </section>
 
@@ -92,9 +92,9 @@ import '../styles/global.css';
 
       <!-- CTA Réserver -->
       <div class="max-w-5xl mx-auto text-center">
-        <a href="https://calendly.com/q.thomasset" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300">
+        <button onclick="openPaymentModal()" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300">
           Je réserve ma parenthèse
-        </a>
+        </button>
       </div>
     </section>
 
@@ -245,9 +245,9 @@ import '../styles/global.css';
           </div>
         </div>
         <div class="text-center space-y-4">
-          <a href="https://calendly.com/q.thomasset" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300 mr-4">
+          <button onclick="openPaymentModal()" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300 mb-4">
             Je réserve ma parenthèse
-          </a>
+          </button>
           <a href="mailto:Celie.octopuscreatio@gmail.com?subject=Je%20demande%20le%20programme%20détaillé%20-%20Séjour%20Lecture" class="gsap-hidden inline-block px-8 py-4 border-2 border-wb-cream text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-cream hover:text-wb-ink transition-colors duration-300">
             Je demande le programme détaillé
           </a>
@@ -293,15 +293,85 @@ import '../styles/global.css';
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="font-seasons text-wb-cream text-4xl mb-6">Vous méritez cette parenthèse</h2>
         <p class="font-lora text-wb-cream/85 text-xl mb-12">Un séjour clefs en main où la seule décision que vous aurez à prendre sera de choisir entre une activité lecture, un jeu de société ou un plongeon dans le jacuzzi.</p>
-        <a href="https://calendly.com/q.thomasset" class="inline-block px-8 py-4 bg-wb-cream text-wb-bordeaux font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold transition-colors">
+        <a href="https://calendar.app.google/kShaXtA3UYahZFSW6" class="inline-block px-8 py-4 bg-wb-cream text-wb-bordeaux font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold transition-colors">
           Appel découverte gratuit
         </a>
       </div>
     </section>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300" aria-hidden="true">
+      <div id="modal-backdrop" class="absolute inset-0 bg-wb-ink/80 backdrop-blur-sm"></div>
+      <div class="relative z-10 bg-wb-cream rounded-2xl shadow-2xl max-w-2xl w-full p-8 max-h-[90vh] overflow-y-auto">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="font-seasons text-wb-ink text-3xl">Choisissez votre formule</h2>
+          <button id="close-payment-modal" class="text-wb-charcoal/50 hover:text-wb-ink transition-colors" aria-label="Fermer">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <!-- Une fois -->
+          <a href="https://buy.stripe.com/14AcN4gFKeW8aN946HfAc04" class="relative block p-6 border border-wb-charcoal/10 rounded-xl shadow-sm hover:border-wb-gold hover:shadow-md transition-all">
+            <div class="flex items-center gap-2 mb-3">
+              <svg class="w-5 h-5 text-wb-bordeaux" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <p class="font-montserrat text-wb-bordeaux text-sm uppercase tracking-widest">Paiement en une fois</p>
+            </div>
+            <p class="font-seasons text-wb-ink text-3xl mb-1">380€</p>
+            <p class="font-lora text-wb-charcoal/70 text-sm mb-4">tout inclus</p>
+            <button onclick="window.location.href='https://buy.stripe.com/14AcN4gFKeW8aN946HfAc04'" class="w-full px-4 py-2 bg-wb-bordeaux text-wb-cream font-montserrat text-xs tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors rounded">
+              Je réserve →
+            </button>
+          </a>
+
+          <!-- 3x -->
+          <a href="https://buy.stripe.com/fZu8wOfBG9BOg7teLlfAc02" class="relative block p-6 border border-wb-gold rounded-xl shadow-sm hover:border-wb-gold hover:shadow-md transition-all">
+            <div class="absolute -top-3 -right-3 bg-wb-gold text-wb-ink px-3 py-1 rounded-full text-xs font-montserrat tracking-widest uppercase">Confort</div>
+            <div class="flex items-center gap-2 mb-3">
+              <svg class="w-5 h-5 text-wb-bordeaux" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <p class="font-montserrat text-wb-bordeaux text-sm uppercase tracking-widest">3 fois sans frais</p>
+            </div>
+            <p class="font-seasons text-wb-ink text-3xl mb-1">130€ × 3</p>
+            <p class="font-lora text-wb-charcoal/70 text-sm mb-4">par mois</p>
+            <button onclick="window.location.href='https://buy.stripe.com/fZu8wOfBG9BOg7teLlfAc02'" class="w-full px-4 py-2 bg-wb-bordeaux text-wb-cream font-montserrat text-xs tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors rounded">
+              Je réserve →
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
   </main>
   <Footer />
 
   <script>
     import '../scripts/animations.ts';
+
+    window.openPaymentModal = function() {
+      const modal = document.getElementById('payment-modal');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closePaymentModal = function() {
+      const modal = document.getElementById('payment-modal');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modal.classList.remove('opacity-100');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('modal-backdrop')?.addEventListener('click', window.closePaymentModal);
+      document.getElementById('close-payment-modal')?.addEventListener('click', window.closePaymentModal);
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') window.closePaymentModal(); });
+    });
   </script>
 </Layout>

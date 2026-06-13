@@ -21,9 +21,9 @@ import '../styles/global.css';
         <div class="gsap-hidden space-y-2 font-montserrat text-wb-gold uppercase text-sm tracking-widest mb-8">
           <p>23–25 octobre 2026 | Monceaux en Bessin | 7 places</p>
         </div>
-        <a href="https://calendly.com/q.thomasset" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300">
+        <button onclick="openPaymentModal()" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300">
           Je réserve ma parenthèse
-        </a>
+        </button>
       </div>
     </section>
 
@@ -77,9 +77,9 @@ import '../styles/global.css';
 
         <!-- CTA Réserver -->
         <div class="text-center mt-12">
-          <a href="https://calendly.com/q.thomasset" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300">
+          <button onclick="openPaymentModal()" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300">
             Je réserve ma parenthèse
-          </a>
+          </button>
         </div>
       </div>
     </section>
@@ -213,9 +213,9 @@ import '../styles/global.css';
           <p class="gsap-hidden">✓ Vous aimez l'idée de progresser en groupe, entouré d'autres écrivains en herbe</p>
         </div>
         <div class="text-center space-y-4">
-          <a href="https://calendly.com/q.thomasset" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300 mr-4">
+          <button onclick="openPaymentModal()" class="gsap-hidden inline-block px-8 py-4 bg-wb-bordeaux text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors duration-300 mb-4">
             Je réserve ma parenthèse
-          </a>
+          </button>
           <a href="mailto:Celie.octopuscreatio@gmail.com?subject=Je%20demande%20le%20programme%20détaillé%20-%20Séjour%20Écriture" class="gsap-hidden inline-block px-8 py-4 border-2 border-wb-cream text-wb-cream font-montserrat text-sm tracking-widest uppercase hover:bg-wb-cream hover:text-wb-ink transition-colors duration-300">
             Je demande le programme détaillé
           </a>
@@ -261,15 +261,128 @@ import '../styles/global.css';
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="font-seasons text-wb-cream text-4xl mb-6">Prêt à écrire votre histoire ?</h2>
         <p class="font-lora text-wb-cream/85 text-xl mb-12">Arrêtez de rêver votre livre. Venez l'écrire.</p>
-        <a href="https://calendly.com/q.thomasset" class="inline-block px-8 py-4 bg-wb-cream text-wb-bordeaux font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold transition-colors">
+        <a href="https://calendar.app.google/kShaXtA3UYahZFSW6" class="inline-block px-8 py-4 bg-wb-cream text-wb-bordeaux font-montserrat text-sm tracking-widest uppercase hover:bg-wb-gold transition-colors">
           Appel découverte gratuit
         </a>
       </div>
     </section>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300" aria-hidden="true">
+      <div id="modal-backdrop" class="absolute inset-0 bg-wb-ink/80 backdrop-blur-sm"></div>
+      <div class="relative z-10 bg-wb-cream rounded-2xl shadow-2xl max-w-2xl w-full p-8 max-h-[90vh] overflow-y-auto">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="font-seasons text-wb-ink text-3xl">Choisissez votre formule</h2>
+          <button id="close-payment-modal" class="text-wb-charcoal/50 hover:text-wb-ink transition-colors" aria-label="Fermer">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="space-y-8">
+          <!-- Chambre Double -->
+          <div>
+            <h3 class="font-seasons text-wb-ink text-2xl mb-4">🛏 Chambre Double</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <!-- Une fois -->
+              <a href="https://buy.stripe.com/dRmfZg3SYdS4aN9fPpfAc00" class="relative block p-6 border border-wb-charcoal/10 rounded-xl shadow-sm hover:border-wb-gold hover:shadow-md transition-all">
+                <div class="flex items-center gap-2 mb-3">
+                  <svg class="w-5 h-5 text-wb-bordeaux" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <p class="font-montserrat text-wb-bordeaux text-sm uppercase tracking-widest">Paiement en une fois</p>
+                </div>
+                <p class="font-seasons text-wb-ink text-3xl mb-1">380€</p>
+                <p class="font-lora text-wb-charcoal/70 text-sm mb-4">tout inclus</p>
+                <button onclick="window.location.href='https://buy.stripe.com/dRmfZg3SYdS4aN9fPpfAc00'" class="w-full px-4 py-2 bg-wb-bordeaux text-wb-cream font-montserrat text-xs tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors rounded">
+                  Je réserve →
+                </button>
+              </a>
+
+              <!-- 3x -->
+              <a href="https://buy.stripe.com/eVqdR8616bJW08vbz9fAc01" class="relative block p-6 border border-wb-gold rounded-xl shadow-sm hover:border-wb-gold hover:shadow-md transition-all">
+                <div class="absolute -top-3 -right-3 bg-wb-gold text-wb-ink px-3 py-1 rounded-full text-xs font-montserrat tracking-widest uppercase">Confort</div>
+                <div class="flex items-center gap-2 mb-3">
+                  <svg class="w-5 h-5 text-wb-bordeaux" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <p class="font-montserrat text-wb-bordeaux text-sm uppercase tracking-widest">3 fois sans frais</p>
+                </div>
+                <p class="font-seasons text-wb-ink text-3xl mb-1">130€ × 3</p>
+                <p class="font-lora text-wb-charcoal/70 text-sm mb-4">par mois</p>
+                <button onclick="window.location.href='https://buy.stripe.com/eVqdR8616bJW08vbz9fAc01'" class="w-full px-4 py-2 bg-wb-bordeaux text-wb-cream font-montserrat text-xs tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors rounded">
+                  Je réserve →
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Chambre Individuelle -->
+          <div>
+            <h3 class="font-seasons text-wb-ink text-2xl mb-4">🛏 Chambre Individuelle</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <!-- Une fois -->
+              <a href="https://buy.stripe.com/dRm5kC89e3dq2gD32DfAc03" class="relative block p-6 border border-wb-charcoal/10 rounded-xl shadow-sm hover:border-wb-gold hover:shadow-md transition-all">
+                <div class="flex items-center gap-2 mb-3">
+                  <svg class="w-5 h-5 text-wb-bordeaux" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <p class="font-montserrat text-wb-bordeaux text-sm uppercase tracking-widest">Paiement en une fois</p>
+                </div>
+                <p class="font-seasons text-wb-ink text-3xl mb-1">440€</p>
+                <p class="font-lora text-wb-charcoal/70 text-sm mb-4">tout inclus</p>
+                <button onclick="window.location.href='https://buy.stripe.com/dRm5kC89e3dq2gD32DfAc03'" class="w-full px-4 py-2 bg-wb-bordeaux text-wb-cream font-montserrat text-xs tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors rounded">
+                  Je réserve →
+                </button>
+              </a>
+
+              <!-- 3x -->
+              <a href="https://buy.stripe.com/dRm7sKdtyaFS6wT6ePfAc05" class="relative block p-6 border border-wb-gold rounded-xl shadow-sm hover:border-wb-gold hover:shadow-md transition-all">
+                <div class="absolute -top-3 -right-3 bg-wb-gold text-wb-ink px-3 py-1 rounded-full text-xs font-montserrat tracking-widest uppercase">Confort</div>
+                <div class="flex items-center gap-2 mb-3">
+                  <svg class="w-5 h-5 text-wb-bordeaux" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <p class="font-montserrat text-wb-bordeaux text-sm uppercase tracking-widest">3 fois sans frais</p>
+                </div>
+                <p class="font-seasons text-wb-ink text-3xl mb-1">150€ × 3</p>
+                <p class="font-lora text-wb-charcoal/70 text-sm mb-4">par mois</p>
+                <button onclick="window.location.href='https://buy.stripe.com/dRm7sKdtyaFS6wT6ePfAc05'" class="w-full px-4 py-2 bg-wb-bordeaux text-wb-cream font-montserrat text-xs tracking-widest uppercase hover:bg-wb-gold hover:text-wb-ink transition-colors rounded">
+                  Je réserve →
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <Footer />
 
   <script>
     import '../scripts/animations.ts';
+
+    window.openPaymentModal = function() {
+      const modal = document.getElementById('payment-modal');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closePaymentModal = function() {
+      const modal = document.getElementById('payment-modal');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modal.classList.remove('opacity-100');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('modal-backdrop')?.addEventListener('click', window.closePaymentModal);
+      document.getElementById('close-payment-modal')?.addEventListener('click', window.closePaymentModal);
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') window.closePaymentModal(); });
+    });
   </script>
 </Layout>
